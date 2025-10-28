@@ -1,0 +1,134 @@
+
+/* --- General Layout --- */
+.App {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* --- Navigation --- */
+nav {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #eee;
+}
+
+.nav-link {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* --- Task List --- */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-title {
+    cursor: pointer;
+    font-size: 18px;
+    flex-grow: 1; /* Allows title to take up remaining space */
+}
+
+.task-title.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* --- Buttons --- */
+.btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.btn-status {
+    margin-right: 10px;
+    color: white;
+}
+
+.status-complete {
+    background-color: #4CAF50; /* Green */
+}
+
+.status-incomplete {
+    background-color: #f44336; /* Red */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Red/Danger color */
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+
+/* --- Form/Input Styles --- */
+.add-task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-task-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-task-form button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.add-task-form button:hover {
+    background-color: #0056b3;
+}
+
+/* --- User Dropdown Styles --- */
+.user-dropdown {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
